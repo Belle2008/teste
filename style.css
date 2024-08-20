@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,33,3%);
+    grid-template-rows: repeat(3, auto);
+    gap: 1px;
+}
+header{
+    background-color: purple;
+    height: 508px;
+    /* inicio */
+    grid-row-start: 1;
+    grid-column-start: 1;
+    /*  fim */
+     grid-row-end: 1;
+    grid-column-end: 4;
+    background-repeat: no-repeat;
+    background-image: url(https://www.revistaestilo.net/binrepository/1280x508/0c0/0d0/none/179468266/VCIB/opas_5791121_20231016150117.png);
+    background-size:100% 508px ;
+} 
+
+
+
+
+
+main{
+    /*background-color: rgb(255, 86, 114);*/
+    height: 800px;
+    /* inicio */
+    grid-row-start: 2;
+    grid-column-start:1 ;
+    /* fim */
+    grid-row-end:2;
+    grid-column-end: 4;
+}
+
+main .titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    grid-template-rows: repeat(1, auto);
+    gap: 0px;
+}
+.left-footer{
+    background-color: palevioletred;
+    height: 200px;
+    /* inicio */
+    grid-row-start: 3;
+    grid-column-start: 1;
+    /* fim */
+    grid-row-end: 4;
+    grid-column-end: 2;
+}
+.center-footer{
+    background-color: rgb(255, 130, 188);
+    height: 200px;
+    /* inicio */
+    grid-row-start: 3;
+    grid-column-start: 2;
+    /* fim */
+    grid-row-end: 4;
+    grid-column-end: 3;
+}
+.right-footer{
+    background-color: rgb(255, 130, 130);
+    height: 200px;
+    /* inicio */
+    grid-row-start: 3;
+    grid-column-start: 3;
+    /* fim */
+    grid-row-end: 4;
+    grid-column-end: 4;
+}
